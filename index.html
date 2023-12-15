@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn WGPU</title>
+    <style>
+        #main-canvas {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            left: 0;
+            top: 0;
+            position: fixed;
+        }
+    </style>
+    </head>
+    <body>
+        <script type="module" lang="javascript">
+              import init from "./pkg/learnwgpu.js";
+              init().then(() => {
+                  console.log("WASM Loaded");
+              });
+        </script>
+        <div id="wasm-example">
+        </div>
+    </body>
+</html>
